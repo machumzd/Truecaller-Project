@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Bold;
+    src: url(./fonts/Bold.ttf);
+}
+@font-face {
+    font-family: Light;
+    src: url(./fonts/Light.ttf);
+}
+body{
+margin:0;
+padding:0;
+font-family: Light;
+}
+.background1{
+    height:180vh;
+    position: relative;
+    background-color: aqua;
+}
+.navbar{
+ width:100%;
+ background-color: rgb(222, 49, 49);
+ display:flex;
+ height:80px;
+ font-weight: 600;
+justify-content: space-between;
+align-items: center;
+list-style: none;
+}
+.left{
+    padding-left: 20px;
+}
+.left ul{
+    display: flex;
+
+}
+.navItem{
+    padding-left: 20px;
+    font-family: Bold;
+    font-size: 14px;
+    text-align: start;
+    line-height: 24px;
+    list-style: none;
+}
+.right{
+    padding-right:10px;
+}
+.right ul{
+    display: flex;
+    align-items: center;
+}
+.navItem2{
+    padding-right:30px;
+    list-style:none;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Bold;
+    color: #ffffff;
+}
+.downloadButton{
+    list-style: none;
+    background-color: #0087ff;
+    border-radius: 50px;
+    font-family: Bold;
+    font-weight: 600;
+    width:192px;
+    height:52px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+   padding-left:17px;
+}
+.mainTitle{
+    margin-left:312px;
+    margin-right: 312px;
+    margin-top: 120px;
+    background-color:#2bc014;
+}
+.mTitle{
+    text-align: left;
+    width:45%;
+    font-weight: 700;
+    font-size: 60px;
+    font-family: Bold;
+}
+.searchBar{
+    background-color: #f8fcfe;
+    width:550px;
+    height:90px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.searchInput{
+    width:375px;
+    height:88px; 
+    border: none; 
+    font-size: 16px;
+    text-align: start;
+    outline: 0;
+   
+   
+}
+.searchBar h3{
+    font-family: Bold;
+    font-size: 14px;
+    color: #0087ff;
+}
+.searchBar i{
+    font-size: 25px;
+    width:70px;
+    height:70px;
+    margin-right: -10px;
+    text-align: center;
+    padding-top: 24px;
+    background-color: #0087ff;
+    border-radius: 50%;
+   
+}
