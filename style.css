@@ -19,6 +19,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Light;
+    scroll-behavior: smooth;
 }
 
 .background1 {
@@ -59,7 +60,39 @@ body {
     line-height: 24px;
     list-style: none;
 }
-
+.navItem3{
+    padding-left: 20px;
+    font-family: Bold;
+    font-size: 14px;
+    text-align: start;
+    line-height: 24px;
+    list-style: none;
+}
+.dropdown{
+    position: absolute;
+    display:none;
+    border-radius: 5px;
+    z-index: -1;
+    cursor:pointer;
+    min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #f1f1f1;
+}
+.dropdown li{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.navItem3:hover .dropdown{
+    display:block;
+    z-index: 1;
+}
+.dropdown li:hover{
+    border-radius: 5px;
+    background-color: #0087ff;
+    color: #ffffff;
+}
 .right {
     padding-right: 10px;
     color: #ffffff;
@@ -107,7 +140,6 @@ body {
 .mTitle {
     text-align: left;
     width: 45%;
-
     line-height: 67.5px;
     font-weight: 80%;
     font-size: 60px;
@@ -173,6 +205,20 @@ body {
     margin-bottom: 20px;
     justify-content: space-evenly;
     flex-direction: row;
+}
+.storeItem2{
+        background-color: #ffffff;
+        border-radius: 50px;
+        margin-right: 10px;
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        font-family: Bold;
+        width: 170px;
+        height: 54px;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+        flex-direction: row;
 }
 
 .storeLeft {
@@ -278,7 +324,7 @@ body {
 
 .background3 {
     background-color: #f4f7f9;
-    ;
+    
     width: 100%;
     height: 70vh;
     position: relative;
@@ -376,9 +422,15 @@ body {
     color: #0087ff;
 }
 
-.bg3Right img {
+.bg3Right{
     width: 270px;
     height: 576.17px;
+    background-image: url(./images/phone3.png);
+    background-size:cover;
+}
+.bg3Right:hover{
+    background-image: url(./images/phone1.png);
+    background-size:cover;
 }
 
 .feature i {
@@ -386,14 +438,16 @@ body {
     padding-left: 20%;
     width: 5px;
     height: 5px;
-    color: #f4f7f9;
+    color: #33b73e00;
     padding-top: 10px;
 
 }
-
-.feature i:hover {
+.feature:hover #fIcon{
     color: #0087ff;
+    z-index: 1;
 }
+
+
 
 .background4 {
     background-color: #e5f3ff;
@@ -455,21 +509,218 @@ body {
 
 .background6 {
     position: relative;
-    background-color: aqua;
+    background-color:#f4f7f9;
     display: flex;
     flex-direction: column;
-    height: 90vh;
-
-}
-
-.bg6Boxes {
-    display: flex;
     align-items: center;
+    height: 65vh;
+}
+.bg6Margin{
+
+    width:1000px;
+   height:60vh;
+   
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.bg6Title{
+   font-size: 40px;
+   line-height: 45px;
+   margin-left:-50%;
+   font-family: Bold;
+   letter-spacing: normal;
+}
+.bg6Boxes {
+    padding-top: 40px;
+    display: flex;
 }
 
 .bg6Box {
     display: flex;
     flex-direction: column;
+    background-color:#ffffff;
+    width:286.5px;
+    margin-right: 15px;
+    height:318px;
+    justify-content: space-evenly;
+    
+}
+.bg6Box img{
+    width: 286.67px;
+    height:136px;
+    object-fit: cover;
+}
+.bg6Box h4{
+    font-size: 12px;
+    font-family: Bold;
+    text-align: left;
+    padding: 20px;
+    
+}
+.bg6Box h3{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: Bold;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 20px;
+    padding-bottom:5px ;
+}
 
+.bg6Box h6{
+    font-size: 12px;
+    line-height: 13.5px;
+    text-align: start;
+    padding: 20px;
+    letter-spacing: 1px;
+    color: #9ea5ab;
+    font-family: Bold;
+}
+#i1{
+    color:#5e35b1;
+    padding-right: 2px;
+}
+#i2{
+    color:#33b73e;
+    padding-right: 2px;
+}
+#i3{
+    color:#00a5b9;
+    padding-right: 2px;
+}
+#i4{
+    color:#00a5b9;
+    padding-right: 2px;
+    font-size:10px; 
+}
+.background7{
+    position: relative;
+    width:100%; 
+    background-color: #e5f3ff; 
+    height:62vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.bg7margin{
+    position: relative;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bg7Left img{
+width: 480px;
+height:480px;
+}
+.bg7Right{
+    width:40%;
+    margin-left: -12%;
+    margin-top: 6%;
+}
+.bg7Images{
+    padding-top: 10px;
+}
+.footer{
+    position: relative;
+    height:55vh;
+    background-color: #001049;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+.footerMargin{
+    font-family: Bold;
+    color: #ffffff;
+    width: 1280px;
+    height:540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:80px 16px 80px 16px;
+    
+}
+.footerImage{
+    display: flex;
+    flex-direction: column;
+}
+.footerImage img{
+margin-bottom: 20px;
+}
+.footerItem{
+    display: flex;
+    flex-direction: column;
+}
+.footerTitle{
+    font-size: 28px;
+    text-align: start;
+    cursor: pointer;
+    padding-bottom: 32px;
+    line-height: 24px;
+}
+.fItems{
+    font-size: 15px;
+    letter-spacing: normal;
+    text-align: start;
+    line-height: 34px;
+    cursor:pointer;
+}
+.fItem2{
+color: #0087ff;
+background-color: #0a237f;
+line-height: 11.5px;
+font-size: 10px;
+padding: 3px;
+margin-left: 3px;
+border-radius: 5px;
+}
+.contact
+{
+    width: 100%;
+    justify-content:center ;
+    align-items: center;
+    height:6vh;
+    position: relative;
+    background-color: #000b34;
+    display:flex;
+    font-family: Bold;
+}
+.contactMargin{
+    display: flex;
+    flex-direction: row;
+    width:1280px;
+    height:42px;
+    justify-content: space-between;
+    padding:10px 16px 0px 16px;
+}
+.copy{
+    color: #ffffff;
+    font-size:12px;
+}
+.contactBoxes{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3px;
+    width:569px;
+    margin-left:-20%;
+}
+.contactBox{
+ display: inline;
+ font-size: 12px;
+ color: #ffffff;
+}
+.social{
+    width:200px;
+    justify-content: space-evenly;
+    font-size:22px;
+}
+.social i{
+    background-color: #0a237f;
+    color: #000b34;
+    padding:5px;
+    border-radius: 50%;
 }
